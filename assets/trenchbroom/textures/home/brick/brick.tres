@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://djecrhnpggrm5"]
+
+[ext_resource type="Texture2D" uid="uid://d4jgbwh57w5pt" path="res://assets/trenchbroom/textures/home/brick/brick.png" id="1_ejnfh"]
+[ext_resource type="Texture2D" uid="uid://cbu2bnu623lsr" path="res://assets/trenchbroom/textures/home/brick/brick_height.png" id="2_6pdwv"]
+
+[resource]
+albedo_texture = ExtResource("1_ejnfh")
+heightmap_enabled = true
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
+heightmap_texture = ExtResource("2_6pdwv")

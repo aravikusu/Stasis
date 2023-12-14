@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://beq6fa21yehkf"]
+
+[ext_resource type="Shader" path="res://assets/shaders/celshader/outline.gdshader" id="1_ym4co"]
+[ext_resource type="Shader" path="res://assets/shaders/celshader/cel-shader-base.gdshader" id="2_205fg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_leus1"]
+render_priority = 0
+shader = ExtResource("1_ym4co")
+
+[resource]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_leus1")
+shader = ExtResource("2_205fg")
+shader_parameter/color = Color(0.54902, 0.592157, 0.827451, 1)
+shader_parameter/specular = Color(0.3, 0.3, 0.3, 0.5)
+shader_parameter/fresnel = Color(0.2, 0.2, 0.2, 0.3)
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)

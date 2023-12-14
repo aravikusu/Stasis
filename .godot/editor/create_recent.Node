@@ -1,0 +1,14 @@
+RayCast3D
+Camera3D
+AnimationPlayer
+Label
+HBoxContainer
+TextureRect
+MarginContainer
+VBoxContainer
+ColorRect
+CanvasLayer
+GPUParticles3D
+CollisionShape3D
+Area3D
+MeshInstance3D

@@ -1,0 +1,14 @@
+[remap]
+
+importer="qodot.map"
+type="Resource"
+uid="uid://be7uhnllkqpyl"
+path="res://.godot/imported/real_home.21.map-5b34dea8f840f012124b4d9c37b157af.tres"
+
+[deps]
+
+source_file="res://assets/trenchbroom/maps/autosave/real_home.21.map"
+dest_files=["res://.godot/imported/real_home.21.map-5b34dea8f840f012124b4d9c37b157af.tres"]
+
+[params]
+

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="QodotFGDFile" load_steps=18 format=3 uid="uid://blmora83hai03"]
+
+[ext_resource type="Resource" uid="uid://dxp37dladbquv" path="res://addons/qodot/game_definitions/fgd/solid_classes/worldspawn_solid_class.tres" id="1_qju2h"]
+[ext_resource type="Resource" uid="uid://cw4s1hnxqetee" path="res://addons/qodot/game_definitions/fgd/solid_classes/func_group_solid_class.tres" id="2_48nks"]
+[ext_resource type="Resource" uid="uid://bnbdy0cky2bo" path="res://addons/qodot/game_definitions/fgd/solid_classes/group_solid_class.tres" id="3_0om20"]
+[ext_resource type="Resource" uid="uid://dy7undvxjvodx" path="res://addons/qodot/game_definitions/fgd/solid_classes/illusionary_solid_class.tres" id="4_brr7p"]
+[ext_resource type="Resource" uid="uid://v3fbh0xn5d2h" path="res://addons/qodot/game_definitions/fgd/solid_classes/physics_solid_class.tres" id="5_8tytj"]
+[ext_resource type="Resource" uid="uid://bu3h1cvdigp1i" path="res://addons/qodot/game_definitions/fgd/point_classes/signal_point_class.tres" id="6_vb5p3"]
+[ext_resource type="Resource" uid="uid://dbh35xj5q8gvc" path="res://addons/qodot/game_definitions/fgd/point_classes/receiver_point_class.tres" id="7_ejp7f"]
+[ext_resource type="Resource" uid="uid://ccwosedfa8v8d" path="res://addons/qodot/game_definitions/fgd/point_classes/light_point_class.tres" id="8_awlft"]
+[ext_resource type="Resource" uid="uid://ckg61cpr5p63l" path="res://addons/qodot/game_definitions/fgd/solid_classes/button_solid_class.tres" id="9_vtdgs"]
+[ext_resource type="Resource" uid="uid://b8aisardk4k4u" path="res://addons/qodot/game_definitions/fgd/solid_classes/detail_solid_class.tres" id="10_41a00"]
+[ext_resource type="Resource" uid="uid://b3yn012fy6782" path="res://addons/qodot/game_definitions/fgd/solid_classes/mover_solid_class.tres" id="11_4eh2f"]
+[ext_resource type="Resource" uid="uid://de6w02sa4ckl5" path="res://addons/qodot/game_definitions/fgd/solid_classes/rotate_solid_class.tres" id="12_62le2"]
+[ext_resource type="Resource" uid="uid://b70dbh5v15xno" path="res://addons/qodot/game_definitions/fgd/solid_classes/trigger_solid_class.tres" id="13_vhyj7"]
+[ext_resource type="Resource" uid="uid://bu2f3lupsjhfp" path="res://addons/qodot/game_definitions/fgd/solid_classes/wall_solid_class.tres" id="14_ciban"]
+[ext_resource type="Resource" uid="uid://cwede00v4ym1n" path="res://assets/trenchbroom/fgd/solid_class/door_solid_class.tres" id="15_3v5mg"]
+[ext_resource type="Script" path="res://addons/qodot/src/resources/game-definitions/fgd/qodot_fgd_file.gd" id="15_awfq0"]
+[ext_resource type="Resource" uid="uid://cc6cndscvbuc7" path="res://assets/trenchbroom/fgd/solid_class/interact_area_solid_class.tres" id="16_uxae5"]
+
+[resource]
+script = ExtResource("15_awfq0")
+export_file = false
+target_folder = ""
+fgd_name = "Stasis"
+base_fgd_files = Array[Resource]([])
+entity_definitions = Array[Resource]([ExtResource("1_qju2h"), ExtResource("2_48nks"), ExtResource("3_0om20"), ExtResource("4_brr7p"), ExtResource("5_8tytj"), ExtResource("6_vb5p3"), ExtResource("7_ejp7f"), ExtResource("8_awlft"), ExtResource("9_vtdgs"), ExtResource("10_41a00"), ExtResource("11_4eh2f"), ExtResource("12_62le2"), ExtResource("13_vhyj7"), ExtResource("14_ciban"), ExtResource("15_3v5mg"), ExtResource("16_uxae5")])

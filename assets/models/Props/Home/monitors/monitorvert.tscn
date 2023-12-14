@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlqmjy8hg67s3"]
+
+[ext_resource type="PackedScene" uid="uid://cr3py7jo7d7mn" path="res://assets/models/Props/Home/monitors/monitorvert.glb" id="1_wrjib"]
+
+[node name="monitorvert" instance=ExtResource("1_wrjib")]

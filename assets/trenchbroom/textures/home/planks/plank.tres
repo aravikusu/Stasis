@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://do81qe7rwmaf6"]
+
+[ext_resource type="Shader" path="res://assets/shaders/celshader/cel-shader-base.gdshader" id="1_wpi0h"]
+[ext_resource type="Texture2D" uid="uid://c7wnlna357jp8" path="res://assets/trenchbroom/textures/home/planks/plank.png" id="2_6sv0j"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_wpi0h")
+shader_parameter/color = Color(0.862745, 0.811765, 0.447059, 1)
+shader_parameter/specular = Color(0.3, 0.3, 0.3, 0.5)
+shader_parameter/fresnel = Color(0.2, 0.2, 0.2, 0.3)
+shader_parameter/base_texture = ExtResource("2_6sv0j")
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)

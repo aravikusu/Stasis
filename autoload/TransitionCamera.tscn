@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://2genfnggk2lv"]
+
+[ext_resource type="Script" path="res://autoload/TransitionCamera.gd" id="1_lrbix"]
+
+[node name="TransitionCamera" type="Camera3D"]
+script = ExtResource("1_lrbix")

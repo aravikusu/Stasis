@@ -1,0 +1,45 @@
+[gd_scene load_steps=9 format=3 uid="uid://bt0tm8topp7dy"]
+
+[ext_resource type="Material" uid="uid://03giebfw0227" path="res://assets/environments/general/debugworld_sky.tres" id="1_enawe"]
+[ext_resource type="Texture2D" uid="uid://dxc482g1yqkp2" path="res://icon.svg" id="2_s88q2"]
+[ext_resource type="PackedScene" uid="uid://cmmm8m5uw4yrr" path="res://entities/Player/Player.tscn" id="3_6cx0d"]
+
+[sub_resource type="Sky" id="Sky_24g3v"]
+sky_material = ExtResource("1_enawe")
+
+[sub_resource type="Environment" id="Environment_pd7ij"]
+background_mode = 2
+sky = SubResource("Sky_24g3v")
+tonemap_mode = 2
+glow_enabled = true
+volumetric_fog_density = 0.0085
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xu4o3"]
+albedo_texture = ExtResource("2_s88q2")
+uv1_scale = Vector3(25, 25, 25)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e5xd7"]
+size = Vector2(25, 25)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_hhlyx"]
+data = PackedVector3Array(12.5, 0, 12.5, -12.5, 0, 12.5, 12.5, 0, -12.5, -12.5, 0, 12.5, -12.5, 0, -12.5, 12.5, 0, -12.5)
+
+[node name="DebugWorld" type="Node"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pd7ij")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.99913, 0.0417009, 0, -0.0417009, -0.99913, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_xu4o3")
+mesh = SubResource("PlaneMesh_e5xd7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_hhlyx")
+
+[node name="Player" parent="." instance=ExtResource("3_6cx0d")]

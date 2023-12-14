@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfdll0wuld6u0"]
+
+[ext_resource type="Script" path="res://scenes/ui/TitleScreen/TitleScreenButton.gd" id="1_dwq5k"]
+
+[sub_resource type="Gradient" id="Gradient_3ff2o"]
+offsets = PackedFloat32Array(0, 0.40942, 0.655797, 1)
+colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0.784314, 0, 0, 0, 0.784314, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_sx461"]
+gradient = SubResource("Gradient_3ff2o")
+
+[sub_resource type="LabelSettings" id="LabelSettings_fvmxy"]
+font_size = 25
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="TitleScreenButton" type="MarginContainer"]
+script = ExtResource("1_dwq5k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_sx461")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="Text" type="Label" parent="HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 1
+text = "Button text"
+label_settings = SubResource("LabelSettings_fvmxy")
+
+[connection signal="gui_input" from="HBoxContainer/Text" to="." method="_on_text_gui_input"]
+[connection signal="mouse_entered" from="HBoxContainer/Text" to="." method="_on_label_mouse_entered"]
+[connection signal="mouse_exited" from="HBoxContainer/Text" to="." method="_on_label_mouse_exited"]

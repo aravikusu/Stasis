@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmmm8m5uw4yrr"]
+
+[ext_resource type="Script" path="res://entities/Player/Player.gd" id="1_tyo3w"]
+[ext_resource type="PackedScene" uid="uid://cbmeit072unr2" path="res://assets/models/Rem/rem.tscn" id="2_wjeup"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eh8qx"]
+radius = 0.265
+height = 1.745
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_tyo3w")
+
+[node name="rem" parent="." instance=ExtResource("2_wjeup")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.846652, 0)
+shape = SubResource("CapsuleShape3D_eh8qx")
+
+[node name="SpringArmPivot" type="Node3D" parent="."]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="SpringArmPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.36825, 0)
+spring_length = 2.0
+
+[node name="Camera3D" type="Camera3D" parent="SpringArmPivot/SpringArm3D"]
+unique_name_in_owner = true
+
+[connection signal="interact" from="rem" to="." method="_on_rem_interact"]

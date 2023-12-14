@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://djxbgrqdhh2tr"]
+
+[ext_resource type="PackedScene" uid="uid://cq88kuabrc1co" path="res://assets/models/Props/Home/flower2/flower2.glb" id="1_6dmxt"]
+
+[node name="flower2" instance=ExtResource("1_6dmxt")]

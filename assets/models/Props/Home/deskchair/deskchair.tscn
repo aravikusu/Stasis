@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1dtgnqjcu5d3"]
+
+[ext_resource type="PackedScene" uid="uid://d38g5pppplxum" path="res://assets/models/Props/Home/deskchair/deskchair.glb" id="1_huouh"]
+
+[node name="deskchair" instance=ExtResource("1_huouh")]
+transform = Transform3D(0.13, 0, 0, 0, 0.13, 0, 0, 0, 0.13, 0, 0, 0)

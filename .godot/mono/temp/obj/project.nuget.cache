@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "BBmcjX3HtG0rrhj8qP1oGIGZ07BH+SSn5Tnb7sz3s2aTFDbaJJy3Uh9N4osm4VgGnGPj7U3sfS4BM0Yvpr2rjA==",
+  "success": true,
+  "projectFilePath": "/mnt/ultracockdrive/repos/Stasis/Stasis.csproj",
+  "expectedPackageFiles": [
+    "/home/aravix/.nuget/packages/godot.sourcegenerators/4.2.0/godot.sourcegenerators.4.2.0.nupkg.sha512",
+    "/home/aravix/.nuget/packages/godotsharp/4.2.0/godotsharp.4.2.0.nupkg.sha512",
+    "/home/aravix/.nuget/packages/godotsharpeditor/4.2.0/godotsharpeditor.4.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

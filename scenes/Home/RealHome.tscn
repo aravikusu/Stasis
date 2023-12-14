@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://ueapfe20aha"]
+
+[ext_resource type="Script" path="res://scenes/Home/RealHome.gd" id="1_qsim8"]
+[ext_resource type="Material" uid="uid://7b6r17jjugbl" path="res://assets/environments/general/realhome_sky.tres" id="1_xa56u"]
+[ext_resource type="PackedScene" uid="uid://bm06fl7ck5lju" path="res://scenes/Home/Room.tscn" id="3_qqhhy"]
+[ext_resource type="PackedScene" uid="uid://bt7xo7uak2skk" path="res://entities/cameras/TitleScreenCamera.tscn" id="4_7oaoq"]
+[ext_resource type="PackedScene" uid="uid://cmmm8m5uw4yrr" path="res://entities/Player/Player.tscn" id="5_mlj70"]
+
+[sub_resource type="Sky" id="Sky_rex33"]
+sky_material = ExtResource("1_xa56u")
+
+[sub_resource type="Environment" id="Environment_ff8lw"]
+background_mode = 2
+sky = SubResource("Sky_rex33")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="RealHome" type="Node"]
+script = ExtResource("1_qsim8")
+
+[node name="Room" parent="." instance=ExtResource("3_qqhhy")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ff8lw")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.886204, -0.125368, -0.446011, -1.45362e-07, -0.962692, 0.2706, -0.463296, -0.239807, -0.853141, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("5_mlj70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.35581, 53.0591, 33.5127)
+
+[node name="Moon" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.887148, -0.0752454, -0.45531, 0.0511132, -0.964526, 0.258991, -0.458646, -0.253036, -0.851831, 0, 0, 0)
+visible = false
+shadow_enabled = true
+
+[node name="TitleScreenCamera" parent="." instance=ExtResource("4_7oaoq")]
+
+[connection signal="start_the_game" from="TitleScreenCamera" to="." method="_on_title_screen_camera_start_the_game"]

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="TrenchBroomGameConfig" load_steps=4 format=3 uid="uid://bxvoei42ixk4w"]
+
+[ext_resource type="Resource" uid="uid://blmora83hai03" path="res://assets/trenchbroom/fgd/stasis_fgd.tres" id="1_g3hyx"]
+[ext_resource type="Texture2D" uid="uid://b2k2iutnsgjfy" path="res://addons/qodot/icon.png" id="2_wws2y"]
+[ext_resource type="Script" path="res://addons/qodot/src/resources/game-definitions/trenchbroom_game_config.gd" id="3_s7c6r"]
+
+[resource]
+script = ExtResource("3_s7c6r")
+export_file = false
+trenchbroom_games_folder = "/home/aravix/.TrenchBroom/games"
+game_name = "Stasis"
+icon = ExtResource("2_wws2y")
+map_formats = Array[Dictionary]([{
+"format": "Valve",
+"initialmap": "initial_valve.map"
+}, {
+"format": "Standard",
+"initialmap": "initial_standard.map"
+}, {
+"format": "Quake2",
+"initialmap": "initial_quake2.map"
+}, {
+"format": "Quake3"
+}])
+fgd_files = Array[Resource]([ExtResource("1_g3hyx")])
+entity_scale = "1"
+default_uv_scale = Vector2(1, 1)
+brush_tags = Array[Resource]([])
+face_tags = Array[Resource]([])
+face_attrib_surface_flags = Array[Resource]([])
+face_attrib_content_flags = Array[Resource]([])

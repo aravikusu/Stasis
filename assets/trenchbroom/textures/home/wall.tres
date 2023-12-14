@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dbjecmx6g4uak"]
+
+[ext_resource type="Shader" path="res://assets/shaders/celshader/cel-shader-base.gdshader" id="1_ipxvj"]
+[ext_resource type="Texture2D" uid="uid://bglnn5w174g2s" path="res://assets/trenchbroom/textures/home/wall.png" id="2_qk4fa"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ipxvj")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/specular = Color(0.301961, 0.301961, 0.301961, 0)
+shader_parameter/fresnel = Color(0.2, 0.2, 0.2, 0.3)
+shader_parameter/base_texture = ExtResource("2_qk4fa")
+shader_parameter/uv_scale = Vector2(1, 1)
+shader_parameter/uv_offset = Vector2(0, 0)
