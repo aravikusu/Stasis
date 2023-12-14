@@ -1,4 +1,0 @@
-QodotFGDSolidClass
-ShaderMaterial
-StandardMaterial3D
-Resource
